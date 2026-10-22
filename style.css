@@ -442,4 +442,9 @@ body.bg-mode{
     padding: 0;
     text-align: justify;
 }
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
 }
