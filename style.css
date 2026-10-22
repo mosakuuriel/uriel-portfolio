@@ -1,0 +1,445 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light-mode .navbar {
+    background-color: #212529 !important;
+}
+
+.light-mode .navbar .navbar-brand,
+.light-mode .navbar .nav-link {
+    color: white !important;
+}
+
+body:not(.light-mode) .navbar {
+    background-color: #212529 !important;
+}
+
+body:not(.light-mode) .navbar .navbar-brand,
+body:not(.light-mode) .navbar .nav-link {
+    color: #ffffff !important;
+}
+
+.light-mode {
+    background-color: black;
+    color: #212529;
+}
+
+.light-mode section,
+.light-mode .card {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+
+
+
+/* body.dark-mode{
+    background-color: black;
+} */
+/* body.light-mode{
+    background-color: whitesmoke;
+    color: black;
+}
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode p{
+    color: black;
+}
+
+
+body.bg-mode h1,
+body.bg-mode h2,
+body.bg-mode p{
+    color: white;
+}
+
+body.bg-mode{
+    background-color: whitesmoke;
+    color: rgb(252, 244, 244);
+} */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-fluid {
+    display: flex;
+}
+
+.collapse {
+    display: flex;
+    justify-content: space-around;
+}
+
+#themeBtn {
+    padding: 0.7rem;
+    border-radius: 2rem;
+    border: 0;
+    background-color: rgb(219, 13, 13);
+    color: white;
+}
+
+
+.navbar img {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(46, 45, 45);
+    border-radius: 2rem;
+}
+
+.navlink {
+    margin-top: 2rem;
+    display: flex;
+    object-fit: contain;
+    height: 100vh;
+    padding: 5rem;
+    background: url(images/WhatsApp\ Image\ 2026-10-19\ at\ 11.26.14.jpeg);
+    text-decoration: none;
+    color: rgb(248, 246, 246);
+    justify-content: space-between;
+    font-size: 4rem;
+}
+
+.navlink .link {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    text-shadow: 20px 20px solid green;
+}
+
+.navlink h2 {
+    font-size: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: capitalize;
+}
+
+.speech {
+    color: white;
+    font-size: 1rem;
+    width: 80%;
+    font-weight: 480;
+    word-spacing: 0.3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navlink img {
+    height: 400px;
+}
+
+.navlink a {
+    text-decoration: none;
+    background: linear-gradient(5deg, #111111, whitesmoke, white);
+    font-size: 1.4rem;
+    padding: 0.7rem;
+    border-radius: 3rem;
+    color: rgb(201, 61, 61);
+
+}
+
+#greeting {
+    font-size: 3rem;
+    background: linear-gradient(0.3deg, #111111, whitesmoke);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.carousel-inner {
+    padding: 9rem;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10rem;
+    margin-top: -9rem;
+    margin-bottom: -10rem;
+}
+
+
+.navlink img {
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 5px rgb(196, 66, 66);
+    width: 300px;
+}
+
+.about {
+    /* color: white; */
+    height: 780px;
+    text-align: center;
+    padding: 1rem;
+    margin: 3rem;
+    border-radius: 3rem;
+    background: url(images/49e0fb80-ba94-4a66-8cac-79d121a4d82f.png)
+}
+
+.about h1 {
+    font-size: 3rem;
+}
+
+.about p {
+    font-size: 1.4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 4rem;
+    text-align: center;
+    align-items: center;
+}
+
+.skills {
+    background: linear-gradient(17deg, rgb(224, 223, 223), rgb(134, 10, 10));
+    padding: 2rem;
+}
+
+.skills h2 {
+    color: rgb(68, 14, 14);
+    font-weight: 700;
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.skills .container h1 {
+    color: rgb(68, 14, 14);
+    font-weight: 700;
+}
+
+.skills .container h5 {
+    color: rgb(68, 14, 14);
+}
+
+.skills .container p {
+    color: rgb(68, 14, 14);
+    font-weight: 600;
+}
+
+.container {
+    border: 2px solid white;
+    border-radius: 2rem;
+    margin-top: 3rem;
+}
+
+.services {
+    padding: 2rem;
+    font-style: italic;
+    background: linear-gradient(17deg, rgb(224, 223, 223), rgb(134, 10, 10));
+}
+
+.services h2 {
+    text-align: center;
+    color: rgb(68, 14, 14);
+    padding-bottom: 2rem;
+}
+
+.services h3 {
+    font-weight: 700;
+    color: rgb(68, 14, 14);
+}
+
+.services .container {
+    border-style: dashed;
+    padding: 1rem;
+}
+
+
+.projects {
+    padding: 2rem;
+}
+
+.projects .container {
+    border: 2px solid rgb(107, 32, 3);
+    background: linear-gradient(to right, rgb(107, 32, 3), white);
+    padding: 5rem;
+}
+
+.projects .card:hover {
+    transition: 1.3 ease;
+    transform: scale(1.05);
+    box-shadow: 2px 2px rgb(68, 14, 14);
+}
+
+
+
+/* .projects img {
+    width: 270px;
+    height: 200px;
+} */
+
+.projects h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    color: rgb(68, 14, 14);
+    font-style: italic;
+}
+
+
+.projects h5 {
+    color: rgb(68, 14, 14);
+    font-weight: 700;
+}
+
+.projects a {
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    color: rgb(196, 66, 66);
+}
+
+.projects a:hover {
+    background-color: rgb(68, 14, 14);
+}
+
+.talk {
+    background-color: rgb(68, 14, 14);
+    padding: 3rem;
+}
+
+.talk a {
+    color: rgb(68, 14, 14);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.talk a:hover {
+    background-color: #333333;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.form-label {
+    color: rgb(202, 200, 200);
+}
+
+.form-check-label {
+    color: rgb(202, 200, 200);
+}
+
+.sub .btn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(68, 14, 14);
+    font-weight: 700;
+    margin-left: 30rem;
+}
+
+.sub .btn:hover {
+    background-color: rgb(201, 61, 61);
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333333;
+    padding: 3rem;
+}
+
+.footer h1 {
+    color: rgb(247, 41, 41);
+    font-family: 'Lucida Grande', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.footer p {
+    color: whitesmoke;
+    font-size: large;
+    font-style: italic;
+    color: rgb(247, 41, 41);
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav a {
+    font-size: 1.2rem;
+    color: rgb(247, 41, 41);
+    text-decoration: none;
+}
+
+.footer-links a {
+    color: rgb(247, 41, 41);
+    font-size: 3rem;
+}
+
+@media only screen and (max-width:850px) {
+.navlink{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 70rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.navlink img{
+    height: 300px;
+    width: 200px;
+    margin-bottom: 2rem;
+}
+#greeting{
+    font-size: 20px;
+}
+.navlink h2{
+    font-size: 1rem;
+}
+.speech{
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.navlink a{
+    font-size: 0.7rem;
+}
+
+
+.about{
+    padding-bottom: 60rem;
+    margin: 0;
+    border-radius: 0;
+}
+
+.carousel-inner{
+    padding: 0;
+    height: 200px;
+    border-radius: 0;
+}
+.about p{
+    width: 100%;
+    padding: 0;
+}
+
+.projects{
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+}
+
+.projects .container{
+    margin: 0;
+    padding: 3rem;
+    border-radius: 0;
+}
+.card{
+    margin-right: 50rem;
+}
+
+.sub .btn{
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+}
