@@ -6,7 +6,7 @@
 
 
 .navbar {
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: 0.3s ease, color 0.3s ease;
 }
 
 .light-mode .navbar {
@@ -29,7 +29,7 @@ body:not(.light-mode) .navbar .nav-link {
 
 .light-mode {
     background-color: black;
-    color: #212529;
+    color: white;
 }
 
 .light-mode section,
@@ -92,7 +92,6 @@ body.bg-mode{
 .navbar img {
     width: 100px;
     height: 50px;
-    background-color: rgb(46, 45, 45);
     border-radius: 2rem;
 }
 
@@ -196,7 +195,7 @@ body.bg-mode{
 }
 
 .skills {
-    background: linear-gradient(17deg, rgb(224, 223, 223), rgb(134, 10, 10));
+    background: linear-gradient(5deg, #111111, whitesmoke, white);
     padding: 2rem;
 }
 
@@ -223,6 +222,7 @@ body.bg-mode{
 }
 
 .container {
+    background-color: white;
     border: 2px solid white;
     border-radius: 2rem;
     margin-top: 3rem;
@@ -231,7 +231,7 @@ body.bg-mode{
 .services {
     padding: 2rem;
     font-style: italic;
-    background: linear-gradient(17deg, rgb(224, 223, 223), rgb(134, 10, 10));
+    background: linear-gradient(5deg, #111111, whitesmoke, white);
 }
 
 .services h2 {
@@ -256,8 +256,7 @@ body.bg-mode{
 }
 
 .projects .container {
-    border: 2px solid rgb(107, 32, 3);
-    background: linear-gradient(to right, rgb(107, 32, 3), white);
+    background: linear-gradient(5deg, #111111, whitesmoke, white);
     padding: 5rem;
 }
 
@@ -302,8 +301,10 @@ body.bg-mode{
 }
 
 .talk {
-    background-color: rgb(68, 14, 14);
-    padding: 3rem;
+    border: none;
+    border-radius: 0;
+    padding: 2rem;
+    background: linear-gradient(5deg, #111111, whitesmoke, white); 
 }
 
 .talk a {
@@ -312,26 +313,20 @@ body.bg-mode{
     text-decoration: none;
 }
 
-.talk a:hover {
-    background-color: #333333;
-    color: white;
-    padding: 0.5rem;
-    border-radius: 2rem;
-}
+
 
 .form-label {
-    color: rgb(202, 200, 200);
+    color: black;
 }
 
 .form-check-label {
-    color: rgb(202, 200, 200);
+    color: black;
 }
 
 .sub .btn {
     background-color: rgb(255, 255, 255);
     color: rgb(68, 14, 14);
     font-weight: 700;
-    margin-left: 30rem;
 }
 
 .sub .btn:hover {
@@ -340,6 +335,7 @@ body.bg-mode{
 
 
 .footer {
+    text-align: center;
     display: flex;
     justify-content: space-around;
     background-color: #333333;
@@ -347,7 +343,7 @@ body.bg-mode{
 }
 
 .footer h1 {
-    color: rgb(247, 41, 41);
+    color: white;
     font-family: 'Lucida Grande', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -356,7 +352,7 @@ body.bg-mode{
     color: whitesmoke;
     font-size: large;
     font-style: italic;
-    color: rgb(247, 41, 41);
+    color: white;
 }
 
 .footer-nav {
@@ -366,85 +362,117 @@ body.bg-mode{
 
 .footer-nav a {
     font-size: 1.2rem;
-    color: rgb(247, 41, 41);
+    color: white;
     text-decoration: none;
 }
 
+.footer-nav a:hover{
+    color: aqua;
+} 
+
 .footer-links a {
-    color: rgb(247, 41, 41);
+    color: white;
     font-size: 3rem;
 }
 
+.footer-links a:hover{
+    color: aqua;
+}
+
 @media only screen and (max-width:850px) {
-.navlink{
-    display: flex;
-    flex-direction: column-reverse;
-    padding-top: 70rem;
-    text-align: center;
-    margin-top: 4rem;
-}
 
-.navlink img{
-    height: 300px;
-    width: 200px;
-    margin-bottom: 2rem;
-}
-#greeting{
-    font-size: 20px;
-}
-.navlink h2{
-    font-size: 1rem;
-}
-.speech{
-    font-size: 1rem;
-    text-align: center;
-    width: 100%;
-}
+    .navlink .link{
+        font-size: 1.2rem;
+        padding-bottom: 1.5rem;
+        padding-top: 2rem;
+        width: 100%;
+    }
 
-.navlink a{
-    font-size: 0.7rem;
-}
+    .navbar-nav li {
+        color: aqua;
+    }
 
 
-.about{
-    padding-bottom: 60rem;
-    margin: 0;
-    border-radius: 0;
-}
+    .navbar img {
+        background: none;
+    }
 
-.carousel-inner{
-    padding: 0;
-    height: 200px;
-    border-radius: 0;
-}
-.about p{
-    width: 100%;
-    padding: 0;
-}
 
-.projects{
-    padding: 0;
-    border-radius: 0;
-    margin: 0;
-}
+    .navlink {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 65rem;
+        text-align: center;
+        margin-top: 3rem;
+    }
 
-.projects .container{
-    margin: 0;
-    padding: 3rem;
-    border-radius: 0;
-}
-.card{
-    margin-right: 50rem;
-}
+    .navlink img {
+        height: 300px;
+        width: 200px;
+        margin-bottom: 2rem;
+    }
 
-.sub .btn{
-    margin: 0;
-    padding: 0;
-    text-align: justify;
-}
+   
+    #greeting {
+        font-size: 20px;
+    }
 
-.footer{
-    display: flex;
-    flex-direction: column;
-}
+    .navlink h2 {
+        font-size: 1rem;
+    }
+
+    .speech {
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navlink a {
+        font-size: 0.7rem;
+    }
+
+
+    .about {
+        padding-bottom: 60rem;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .carousel-inner {
+        padding: 0;
+        height: 200px;
+        border-radius: 0;
+    }
+
+    .about p {
+        width: 100%;
+        padding: 0;
+    }
+
+    .projects {
+        padding: 0;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .projects .container {
+        margin: 0;
+        padding: 3rem;
+        border-radius: 0;
+    }
+
+    .card {
+        margin-right: 50rem;
+    }
+
+    .sub .btn {
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
